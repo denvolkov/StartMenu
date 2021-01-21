@@ -189,13 +189,13 @@ struct ContentView: View {
                 }
             
             
-                .background(Color.white)
-            .cornerRadius(self.show ? 30 : 0)
-            .scaleEffect(self.show ? 0.9 : 1)
-            .offset(x: self.show ? UIScreen.main.bounds.width / 2 : 0, y: self.show ? 15 : 0)
-            .rotationEffect(.init(degrees: self.show ? -5 : 0))
-        }
-            
+                      }
+            .background(Color.white)
+        .cornerRadius(self.show ? 30 : 0)
+        .scaleEffect(self.show ? 0.9 : 1)
+        .offset(x: self.show ? UIScreen.main.bounds.width / 2 : 0, y: self.show ? 15 : 0)
+        .rotationEffect(.init(degrees: self.show ? -5 : 0))
+
         }
         .background(Color("Color").edgesIgnoringSafeArea(.all))
         .edgesIgnoringSafeArea(.all)
